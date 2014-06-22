@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<div class="row" >
+  <div class="col-md-8">
+    <div class="itinerary" style="padding-top: 20px;">
+    {{ content }}
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div style="text-align:right;">
+      <h2>{{ page.title }}</h2>
+      <p class="meta"> {{ page.date | date_to_string }}</p>
+      <ul style="font-size: 1.4em;">
+        <li> <i class=" fa fa-dollar "> </i>
+          {{ page.cost_per_person }} a person</li>
+        <li>  <i class="fa fa-clock-o"> </i> 
+          {{ page.trip_time_in_seconds | divided_by: 3600 | round(1, 'floor') }} hours</li>
+        <li> by {{ page.transportation_mode | capitalize }}  </li>
+
+      </ul>
+    </div>
+  </div>
+
+
+</div> <!-- end row -->

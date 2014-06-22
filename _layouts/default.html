@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      {% include site-wide.html %}
+      <link rel="stylesheet/less" type="text/css" href="/css/default.less" />
+    </head>
+    <body>
+
+
+
+      <div class="nav-hover" data-200="top:-40px;" data-300="top:0px;">
+        <div class="jumbotron floating">
+          <div class="row">
+            <div class="col-sm-8 col-sm-offset-2">
+              <div class="title-nav pull-left">
+              <span><a href="/" class="title-nav-item">{{ site.name }}</a></span>
+            </div>
+
+            <div class="title-nav pull-right horizontal-ul">
+              <span><a href="/about" class="title-nav-item"> about </a></span>
+            </div>
+            </div>
+          </div>
+        </div>    
+      </div>
+
+
+
+
+
+      <div class="jumbotron page-title" data-0="background-position:50% 40%;" data-300="background-position:50% 5%;">
+        <div class="fader" data-0="background-color: rgba(0,0,0,0);" data-300="background-color: rgba(0,0,0,0.5);">
+
+        </div>
+        <div class="row" >
+          <div class="col-sm-8 col-sm-offset-2">
+            <div class="title-nav pull-left">
+              <span><a href="/" class="title-nav-item">{{ site.name }}</a></span>
+            </div>
+
+            <div class="title-nav pull-right horizontal-ul">
+              <span><a href="/about" class="title-nav-item"> about </a></span>
+            </div>
+          </div> <!-- End Header -->
+        </div>
+        <div class="row">
+
+        </div>
+      </div> <!-- Jumbotron -->
+      <div class="container">          
+
+        {{ content }}
+      </div> <!-- End Container -->
+      
+      {% include site-wide-footer.html %}
+
+{% include site-wide-javascript.html %}
+    </body>
+</html>

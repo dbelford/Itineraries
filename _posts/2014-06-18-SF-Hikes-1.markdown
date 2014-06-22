@@ -1,0 +1,38 @@
+---
+layout: itinerary
+title:  SF Hikes 1
+date:   2014-06-18 10:10:32
+categories: jekyll update
+cost_per_person: 15
+trip_time_in_seconds: 14400
+transportation_mode: car
+tile_image: images/front-page/hiking.jpg
+---
+
+<div style="padding-left: 30px;">
+  There are a lot of good places to hike in the bay area.
+</div>
+
+<h1>
+  <span> 1 </span>
+  Breakfast at <a href="http://www.yelp.com/biz/freds-coffee-shop-sausalito">Fred's</a>
+</h1>
+
+#2 Hike in Muir Woods
+
+<div style="padding-left: 30px;">
+  <h3>Trail Head</h3>
+
+  <h3>Picture Spot </h3>
+
+</div>
+
+#3 Dinner at
+
+#4 Sunset at [Battery Spencer](http://www.yelp.com/biz/battery-spencer-sausalito)
+
+<div style="padding-left: 30px;">
+  For a classic view of the Golden Gate Bridge and Pacific Ocean sunset.
+</div>
+
+<br/>

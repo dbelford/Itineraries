@@ -1,0 +1,8 @@
+name: Jen's Itineraries
+markdown: redcarpet
+pygments: true
+markdown: redcarpet
+permalink: pretty
+exclude: 
+  - s3_website.yml
+  - README.md

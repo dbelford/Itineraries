@@ -1,0 +1,27 @@
+<link rel="shortcut icon" type="image/ico" href="images/favicon.ico" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="apple-mobile-web-app-capable" content="yes" >
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css" >
+
+
+<link rel="stylesheet" href="/css/syntax.css">
+<link rel="stylesheet" href="/css/main.css" type="text/css">
+
+
+
+
+<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+
+
+<link href='http://fonts.googleapis.com/css?family=Arvo:400,700|Oswald:400,700,300' rel='stylesheet' type='text/css'>
+
+
+<link rel="stylesheet/less" type="text/css" href="/css/defaults.less" />
+
+{% for less_file in page.less %}
+<link rel="stylesheet/less" type="text/css" href="{{less_file}}" />
+{% endfor %}
+
+<title>{{ page.title }}</title>

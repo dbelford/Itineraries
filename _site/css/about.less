@@ -1,0 +1,235 @@
+
+@primary-color: hsla(26, 100%, 50%, 1);
+
+@screen-sm-min: 786px; /* Small devices (tablets, 768px and up) */
+@screen-md-min: 992px; /* Medium devices (desktops, 992px and up) */
+@screen-lg-min: 1200px; /* Large devices (large desktops, 1200px and up) */
+@screen-xs-max:              (@screen-sm-min - 1);
+@screen-sm-max:              (@screen-md-min - 1);
+@screen-md-max:              (@screen-lg-min - 1);
+
+.jumbotron {
+  h2 {
+    text-align: center;
+  }
+}
+
+.profile-row {
+  text-align: center;
+
+  .profile-image {
+    border-radius: 80px;
+    border: 4px solid #fff;
+    padding: 5px;
+
+    margin: 35px;
+
+    display: inline-block;
+
+    img {
+      border: 0 none;
+      border-radius: 90px;
+      box-shadow: none;
+      height: 140px;
+      width: 140px;
+      background-size: 100% 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image: url('/images/about-profile-photo-1@2x.png');
+    }
+
+  }
+}
+
+/****************************************/
+/****************************************/
+/*
+/*  Misc (Map)
+/*
+/****************************************/
+/****************************************/
+
+.jumbotron.about-misc {
+  // background-size: 100% 100%;
+
+
+  a.btn.btn-icon, h2 {
+    color: #fff;
+    text-shadow: 0px 0px 35px darken(@primary-color, 10%);
+  }
+  box-shadow: inset 0px 0px 30px desaturate(@primary-color, 20%);
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  background-color: @primary-color;
+  .scroll-to-hash {
+    margin-top: 180px;
+  }
+}
+
+
+@media (max-width: @screen-sm-min) {
+  .jumbotron.about-misc {
+    height: 420px;
+    background-size: auto auto;
+    background-image: url('/images/map-xs-2.png');
+  }
+}
+
+//Override previous style for phones vs tablets
+@media (max-width: 320px) {
+  .jumbotron.about-misc {
+    height: 420px;
+    background-size: auto 100%;
+    background-image: url('/images/map-xs-2.png');
+  }
+}
+
+@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) { 
+  .jumbotron.about-misc {
+    height: 400px;
+    background-image: url('/images/map-sm.png');
+    .scroll-to-hash {
+      margin-top: 120px;
+    }
+  }
+
+}
+
+
+@media (min-width: @screen-md-min) and (max-width: @screen-md-max) { 
+  .jumbotron.about-misc {
+    height: 500px;
+    background-image: url('/images/map-2.png');
+    .scroll-to-hash {
+      margin-top: 280px;
+    }
+  }
+
+
+}
+
+
+@media (min-width: @screen-lg-min) { 
+  .jumbotron.about-misc {
+    height: 600px;
+    background-image: url('/images/map-3.png');
+    .scroll-to-hash {
+      margin-top: 380px;
+    }
+  }
+}
+
+
+/****************************************/
+/****************************************/
+/*
+/*  Work
+/*
+/****************************************/
+/****************************************/
+
+
+.jumbotron.about-work {
+
+  background-color: #fff;
+
+
+  .work-row {
+
+    margin-top: 45px;
+
+
+    .work-image {
+      padding: 10px; 
+      
+      transition: background-color 0.3s;
+      a { display: block; }
+      img { width: 100%; }
+      &:hover { 
+        background-color: #f4f4f4; 
+      }
+
+    }
+    p {
+      text-align: center;
+      padding-top: 15px;
+    }
+  }
+}
+
+/****************************************/
+/****************************************/
+/*
+/*  Skills
+/*
+/****************************************/
+/****************************************/
+
+.jumbotron.about-skills {
+
+  h2 {
+    margin-top: -4px;
+    margin-bottom: 35px;
+  }
+
+  background-color: #fff;
+  span {
+
+    font-size: 21px;
+    font-weight: 200;
+    line-height: 32px;
+  }
+
+  .skill-names {
+    display: inline-block;
+    width: 20%;
+  }
+  .skill-bars {
+    display: inline-block;
+    width: 80%;
+    padding-top: 4px;
+  }
+
+  .bar {
+    height: 45px;
+  }
+
+  .background-bar, .foreground-bar  {
+    left: 0px;
+    width: 100%;
+    height: 22px;
+    display: block;
+    background-color: #eee;
+    border-radius: 8px;
+    line-height: 32px;
+  }
+
+  .foreground-bar {
+    margin-top: -22px;
+    width: 30%;
+    left: 0px;
+    background-color: @primary-color;
+  }
+
+}
+
+@media (max-width: @screen-sm-min) { 
+  .jumbotron.about-skills {
+    .skills-row {
+      margin: 0px -40px;
+    }
+    .skill-names {
+      width: 40%;
+    }
+    .skill-bars {
+      width: 60%;
+    }
+  }
+}
+
+
+.offset-text {
+    font-size: 1.3em;
+}
