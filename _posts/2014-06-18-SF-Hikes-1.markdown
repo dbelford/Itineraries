@@ -1,6 +1,6 @@
 ---
 layout: itinerary
-title:  SF Hikes 1
+title:  SF Hikes
 date:   2014-06-18 10:10:32
 categories: itinerary hike
 cost_per_person: 15
