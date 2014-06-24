@@ -2,37 +2,86 @@
 layout: itinerary
 title:  SF Hikes 1
 date:   2014-06-18 10:10:32
-categories: jekyll update
+categories: itinerary hike
 cost_per_person: 15
 trip_time_in_seconds: 14400
 transportation_mode: car
 tile_image: images/front-page/hiking.jpg
 ---
 
-<div style="padding-left: 30px;">
-  There are a lot of good places to hike in the bay area.
-</div>
 
-<h1>
-  <span> 1 </span>
-  Breakfast at <a href="http://www.yelp.com/biz/freds-coffee-shop-sausalito">Fred's</a>
-</h1>
+<!-- contentfor is broken without this -->
+
+{% contentfor itinerary_summary %}
+
+<i style="text-align:justify; font-size: 0.9em; color: #777; font-weight: 200;">
+Muir Woods is full of fun and historic trails to explore. One of the most charming is the Tourist Club loop that passes through a beer garden.  There people will be found playing board games and drinking beer. The [Nature Friends Tourist Club](http://www.yelp.com/biz/nature-friends-tourist-club-mill-valley) has been here since 1912, so come join a Bay Area tradition.
+</i>
+{% endcontentfor %}
+
+#1 Breakfast at [Fred's](http://www.yelp.com/biz/freds-coffee-shop-sausalito)
+
+
+
+<ul class="image-carousel" >
+  <li style="background-image: url('http://maps.googleapis.com/maps/api/staticmap?center=1917+Bridgeway+Blvd+Sausalito,+CA+94965&zoom=11&scale=false&size=300x300&maptype=hybrid&sensor=false&format=jpg&visual_refresh=true&markers=size:mid%7Ccolor:red%7C1917+Bridgeway+Blvd+Sausalito,+CA+94965');">
+  </li>
+  <li style="background-image: url('/images/sf-hiking/freds.jpg')">
+  </li>
+</ul>
+
 
 #2 Hike in Muir Woods
 
-<div style="padding-left: 30px;">
-  <h3>Trail Head</h3>
+<table class="table">
+  <tbody>
+    <tr>
+      <td>Entrance fee:</td>
+      <td>$7 per person over 16</td>
+    </tr>
+    <tr> 
+      <td>Address: </td>
+      <td>1 Muir Woods Road <br/>
+          Mill Valley, CA 94941 
+      </td>
+    </tr>
+    <tr>
+      <td>Parking: </td>
+      <td>Can be difficult on the weekends. Additional parking is available near Highway 101 with a shuttle costing $5 round trip per person over 16. 
+      </td>
+    </tr>
+  </tbody>
+</table>
 
-  <h3>Picture Spot </h3>
+###Trail
+<ul class="image-carousel has-overflow">
+  {% carousel_map_image Muir+Woods+Rd+Mill+Valley,+CA+94941 %}
+  {% carousel_image /images/sf-hiking/muir-woods-tile-1.jpg %}
+  {% carousel_image /images/sf-hiking/muir-woods-tile-2.jpg %}
+  {% carousel_image /images/sf-hiking/muir-woods-tile-3.jpg %}
+</ul>
 
-</div>
+###Beer Garden on the Trail
+<ul class="image-carousel has-overflow" style="">
+  {% carousel_image /images/sf-hiking/beer-garden-tile-1.jpg %}
+  {% carousel_image /images/sf-hiking/beer-garden-tile-2.jpg %}
+  {% carousel_image /images/sf-hiking/beer-garden-tile-3.jpg %}
+  {% carousel_image /images/sf-hiking/board-games-tile.jpg %}
+</ul>
 
-#3 Dinner at
+
+#3 Dinner at [Sartaj](http://www.yelp.com/biz/sartaj-india-cafe-sausalito?osq=dinner)
+
+Back to Sausalito for dinner, you'll find mainly upscale dining.  If you enjoy curry though, you should stop for dinner at Sartaj before heading to Battery Spencer.  You'll be hungry in a way fine dining could not satisfy. If you're looking for suggestions there's
+
+- Mango Chutney
+- Chicken Tikka Masala
+- Mango Lassi
+
+
 
 #4 Sunset at [Battery Spencer](http://www.yelp.com/biz/battery-spencer-sausalito)
 
-<div style="padding-left: 30px;">
-  For a classic view of the Golden Gate Bridge and Pacific Ocean sunset.
-</div>
-
-<br/>
+{% jumbo_div /images/sf-hiking/battery-spencer-jumbo.jpg %}
+<i style="margin-top: 300px; font-size: 1.5em; text-align: center;">For a classic view of the Golden Gate Bridge and Pacific Ocean sunset.</i>
+{% endjumbo_div %}

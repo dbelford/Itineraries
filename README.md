@@ -9,6 +9,10 @@ Requires [Jekyll](http://jekyllrb.com).  To download Jekyll, make sure you have 
 
 Jekyll will process files conforming to the directory and file structure described on Jekyll's site.
 
+Then run bundler to ensure the `content-blocks` Jekyll plugin is there too:
+
+`bundle install`
+
 ##Run Website Locally
 
 With Jekyll installed, navigate your terminal to the root directory of the repo:
