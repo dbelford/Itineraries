@@ -1,6 +1,6 @@
 name: Jen's Itineraries
 markdown: redcarpet
-pygments: true
+highlighter: pygments
 permalink: pretty
 exclude: 
   - s3_website.yml

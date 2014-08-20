@@ -19,9 +19,9 @@ Muir Woods is full of fun and historic trails to explore. One of the most charmi
 </i>
 {% endcontentfor %}
 
+{% trip_map_image 1917+Bridgeway+Blvd+Sausalito,+CA+94965 Muir+Woods+Rd+Mill+Valley,+CA+94941 43+Caledonia+St,+sausalito,+ca+94965 Battery+Spencer,+ca+94941 %}
+
 #1 Breakfast at [Fred's](http://www.yelp.com/biz/freds-coffee-shop-sausalito)
-
-
 
 <ul class="image-carousel" >
   <li style="background-image: url('http://maps.googleapis.com/maps/api/staticmap?center=1917+Bridgeway+Blvd+Sausalito,+CA+94965&zoom=11&scale=false&size=300x300&maptype=hybrid&sensor=false&format=jpg&visual_refresh=true&markers=size:mid%7Ccolor:red%7C1917+Bridgeway+Blvd+Sausalito,+CA+94965');">
@@ -55,7 +55,7 @@ Muir Woods is full of fun and historic trails to explore. One of the most charmi
 
 ###Trail
 <ul class="image-carousel has-overflow">
-  {% carousel_map_image Muir+Woods+Rd+Mill+Valley,+CA+94941 %}
+  {% carousel_map_image Muir+Woods+Rd+Mill+Valley,+CA+94941 1917+Bridgeway+Blvd+Sausalito,+CA+94965 %}
   {% carousel_image /images/sf-hiking/muir-woods-tile-1.jpg %}
   {% carousel_image /images/sf-hiking/muir-woods-tile-2.jpg %}
   {% carousel_image /images/sf-hiking/muir-woods-tile-3.jpg %}
@@ -83,5 +83,7 @@ Back to Sausalito for dinner, you'll find mainly upscale dining.  If you enjoy c
 #4 Sunset at [Battery Spencer](http://www.yelp.com/biz/battery-spencer-sausalito)
 
 {% jumbo_div /images/sf-hiking/battery-spencer-jumbo.jpg %}
-<i style="margin-top: 300px; font-size: 1.5em; text-align: center;">For a classic view of the Golden Gate Bridge and Pacific Ocean sunset.</i>
+<i style="margin-top: 300px; font-size: 1.5em; text-align: center;">
+  For a classic view of the Golden Gate Bridge and Pacific Ocean sunset.
+</i>
 {% endjumbo_div %}

@@ -3,10 +3,18 @@ class CarouselMapImage < Liquid::Tag
   def initialize(tagName, markup, tokens)
     super
     
+    @variables = markup.split(" ")
+
+
     @zoom = "10";
     @size = "300x300"
-    @center = markup
+    @center = @variables[0]
     @marker_location = markup
+    # @path_string = ""
+
+    # if @variables.length > 1
+    #   @path_string = "&path=color:0xFE6E00ff|weight:2|#{@marker_location}|#{@variables[1]}"
+    # end
 
   end
 
