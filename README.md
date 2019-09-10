@@ -1,7 +1,7 @@
-#Jen's Itineraries
+# Jen's Itineraries
 
 
-##Installation
+## Installation
 
 Requires [Jekyll](http://jekyllrb.com).  To download Jekyll, make sure you have ruby gems installed and then in your terminal execute:
 
@@ -13,7 +13,7 @@ Then run bundler to ensure the `content-blocks` Jekyll plugin is there too:
 
 `bundle install`
 
-##Run Website Locally
+## Run Website Locally
 
 With Jekyll installed, navigate your terminal to the root directory of the repo:
 
